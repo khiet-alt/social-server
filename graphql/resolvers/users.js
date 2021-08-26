@@ -13,7 +13,7 @@ function generateToken(user) {
         id: user.id,
         email: user.email,
         username: user.username
-    }, SECRET_KEY, {expiresIn: '3h'})
+    }, SECRET_KEY, {expiresIn: '24h'})
 }
 
 module.exports = {
@@ -48,7 +48,7 @@ module.exports = {
             //TODO: Validate user data
             const { errors, valid } = validateRegisterInput(username, email, password, confirmPassword)
             if ( !valid )
-                throw new UserInputError('Not valid', errors)
+                throw new UserInputError('Not valid', { errors })
 
             //TODO: make sure user doesn't exist already
             const user = await User.find({ username })
