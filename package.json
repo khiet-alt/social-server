@@ -12,17 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@graphql-tools/schema": "^8.1.2",
     "apollo-server": "^3.1.2",
-    "apollo-server-express": "^3.1.2",
     "bcryptjs": "^2.4.3",
-    "express": "^4.17.1",
     "graphql": "^15.5.1",
-    "graphql-subscriptions": "^1.2.1",
-    "http": "^0.0.1-security",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.13.7",
-    "subscriptions-transport-ws": "^0.9.19"
+    "mongoose": "^5.13.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
